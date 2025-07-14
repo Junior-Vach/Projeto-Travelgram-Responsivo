@@ -1,0 +1,40 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 0;
+    padding-block: 20px;
+    
+    & ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding-block: 8px;
+    }
+    
+    & ul li:last-child img{
+        width: 40px;
+        height: 40px;
+    }
+
+    
+}
+
+@media (width <= 23.4375em){
+
+    & nav{
+           
+        & li:nth-child(2),
+        & li:nth-child(3){
+            display: none;
+        }
+
+        & ul{
+            gap: 1rem;
+        }
+    }
+            
+        
+}
+    
